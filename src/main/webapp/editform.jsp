@@ -27,7 +27,7 @@
 	<tr><td>Writer:</td><td><input type="text" name="writer" value="<%= u.getWriter()%>" /></td></tr>
 	<tr><td>Photo:</td><td><input type="file" name="photo" value="${u.getPhoto()}"/>
 	<tr><td>Content:</td><td><textarea cols="50" rows="5" name="content"><%= u.getContent()%></textarea></td></tr>
-	<tr><td>Current Photo:</td><td><c:if test="${u.getPhoto() ne ''}"><br /><img src="${pageContext.request.contextPath}/upload/${vo.getPhoto()}" class="photo"></c:if></td></tr>
+	<tr><td>Current Photo:</td><td><c:if test="${u.getPhoto() ne ''}"><br /><img width="100" height="100" src="${pageContext.request.contextPath}/upload/${vo.getPhoto()}" class="photo"></c:if></td></tr>
 	<tr><td colspan="2"><input type="submit" value="Edit Post"/>
 	<input type="button" value="Cancel" onclick="history.back()"/></td></tr>
 	</table>

@@ -62,7 +62,7 @@
 		<td>${u.getCategory()}</td>
 		<td>${u.getTitle()}</td>
 		<td>${u.getWriter()}</td>
-		<td><img src="${pageContext.request.contextPath}/upload/${u.getPhoto()}" class="photo"></td>
+		<td><img width="100" height="100" src="${pageContext.request.contextPath}/upload/${u.getPhoto()}" class="photo"></td>
 		<td>${u.getContent()}</td>
 		<td>${u.getRegdate()}</td>
 		<td>${u.getModdate()}</td>
