@@ -43,9 +43,8 @@
         </tr>
         <tr>
             <td>Current Photo:</td>
-            <td><c:if test="${u.getPhoto() ne null}"><br/><img width="100" height="100"
-                                                             src="${pageContext.request.contextPath}/upload/${vo.getPhoto()}"
-                                                             class="photo"></c:if></td>
+            <td><c:if test="${vo.getPhoto() ne null}"><br/><img width="100" height="100" src="${pageContext.request.contextPath}/upload/${vo.getPhoto()}"
+                                                               class="photo"></c:if></td>
         </tr>
         <tr>
             <td colspan="2"><input type="submit" value="Edit Post"/>
